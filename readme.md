@@ -60,7 +60,10 @@ $ curl https://api.neighbourhoodapi.com/people/jaxsan
     "age": 22,
     "numOfPeople": 5
 }
+```
+Below is an example of where you can do an advanced search of a particular person along with their age and how many people live in their household.
 
+```
 GET /people
 $ curl https://api.neighbourhoodapi.com/people?age=20-30&numOfPeople=3/
 
@@ -90,7 +93,6 @@ $ curl https://api.neighbourhoodapi.com/house/
     "address": "13 Strawberry House NW6 6RG",
     "owner": "Billy Usman"
 }]
-
 ```
 ---
 Now it's time to specifically view an owner of a house
