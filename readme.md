@@ -16,15 +16,17 @@ The API enables users to
 
 ## Neighbour API
 ---
-`$ curl; https://api.neighbourhoodapi.com/
+```
+$ curl; https://api.neighbourhoodapi.com/
 
-
-Your friendly neighbourhood` 
+Your friendly neighbourhood
+``` 
 
 ---
 The following response will return a list of people within the neighbour from the SQL database:
 
-`GET /people
+```
+GET /people
 $ curl https://api.neighbourhoodapi.com/people
 
 [{
@@ -41,13 +43,15 @@ $ curl https://api.neighbourhoodapi.com/people
     "lastName": "Sivanesan",
     "age": 22,
     "numOfPeople": 5
-}]  
-`
+}] 
+
+```
 ---
 
 In order to specifically get the information of one person, you may do the following:
 
-`GET /people/:firstName/
+```
+GET /people/:firstName/
 $ curl https://api.neighbourhoodapi.com/people/jaxsan
 {
     "id": 2,
@@ -55,9 +59,9 @@ $ curl https://api.neighbourhoodapi.com/people/jaxsan
     "lastName": "Sivanesan",
     "age": 22,
     "numOfPeople": 5
-}`
+}
 
-`GET /people
+GET /people
 $ curl https://api.neighbourhoodapi.com/people?age=20-30&numOfPeople=3/
 
 {
@@ -67,11 +71,13 @@ $ curl https://api.neighbourhoodapi.com/people?age=20-30&numOfPeople=3/
     "age": 25,
     "numOfPeople": 3
 }
-`
+
+```
 
 So now you know how to look up the people within your neighbourhood, now it's time to view the house and the owner.
 
-`GET /house/
+```
+GET /house/
 $ curl https://api.neighbourhoodapi.com/house/
 [{
     "id": 1,
@@ -83,15 +89,21 @@ $ curl https://api.neighbourhoodapi.com/house/
     "id": 2,
     "address": "13 Strawberry House NW6 6RG",
     "owner": "Billy Usman"
-}]`
+}]
 
-`GET /house/:owner
+```
+---
+Now it's time to specifically view an owner of a house
+
+```
+GET /house/:owner
 $ curl https://api.neighbourhoodapi.com/house/billyusman
 {
     "id": 2,
     "address": "13 Strawberry House NW6 6RG",
     "owner": "Billy Usman"
-}`
+}
+```
 
 
 
