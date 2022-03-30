@@ -16,7 +16,9 @@ The API enables users to
 
 ## Neighbour API
 ---
-`$ curl; https://api.neighbourhoodapi.com/  
+`$ curl; https://api.neighbourhoodapi.com/
+
+
 Your friendly neighbourhood` 
 
 ---
