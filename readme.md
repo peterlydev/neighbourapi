@@ -16,7 +16,7 @@ The API enables users to
 
 ## Neighbour API
 ---
-`$ curl; https://api.neighbourhoodapi.com/
+`$ curl; https://api.neighbourhoodapi.com/  
 Your friendly neighbourhood` 
 
 ---
@@ -39,7 +39,9 @@ $ curl https://api.neighbourhoodapi.com/people
     "lastName": "Sivanesan",
     "age": 22,
     "numOfPeople": 5
-}]`
+}]  
+`
+---
 
 In order to specifically get the information of one person, you may do the following:
 
